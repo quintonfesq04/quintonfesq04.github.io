@@ -61,6 +61,18 @@ ul { list-style: none; }
     overflow-y: auto;
 }
 
+/* --- NEW: PROFILE IMAGE STYLES --- */
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures image isn't squashed */
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid var(--accent);
+    margin: 0 auto 1.5rem auto; /* Centers it */
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1);
+}
+
 .profile-header h1 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -247,6 +259,13 @@ ul { list-style: none; }
         padding: 2rem;
         border-right: none;
         border-bottom: 1px solid var(--border);
+    }
+    
+    /* Center profile image on mobile */
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
     }
     
     #navbar ul {
