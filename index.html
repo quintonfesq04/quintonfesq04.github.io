@@ -4,234 +4,203 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quinton Fesq</title>
-  <meta name="description" content="Quinton Fesq — Computer Science (Cybersecurity). Portfolio, projects, writing, and contact." />
-  <link rel="icon" href="favicon.svg" />
+  <meta name="description" content="Quinton Fesq — Resume transcript portfolio." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-dot"></span>
-        <span class="brand-text">Quinton Fesq</span>
-      </a>
+  <div class="layout">
+    <!-- LEFT PANEL -->
+    <aside class="sidebar">
+      <div class="nameblock">
+        <div class="name">QUINTON<br/>FESQ</div>
+        <div class="subtitle">Computer Science • Cybersecurity</div>
+      </div>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="pill">Contact</a>
+      <nav class="nav">
+        <a href="#introduction" class="active">INTRODUCTION</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#leadership">LEADERSHIP</a>
+        <a href="#work">WORK</a>
+        <a href="#projects">PROJ</a>
       </nav>
-    </div>
-  </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="kicker">Computer Science • Cybersecurity Concentration</p>
-        <h1>
-          I build reliable software, help people solve technical problems, and write clearly.
-        </h1>
-        <p class="sub">
-          Final-semester CS student at Ohio Northern University. Interested in IT/Help Desk,
-          Software Development, and AI-adjacent roles.
+      <div class="contact">
+        <div class="contact-title">CONTACT</div>
+        <div class="contact-item"><span class="label">Email:</span> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></div>
+        <div class="contact-item"><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">/in/quinton-fesq-984011207</a></div>
+        <div class="contact-item"><span class="label">GitHub:</span> <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">github.com/quintonfesq04</a></div>
+        <div class="contact-item"><span class="label">Articles:</span> <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Empire Sports Media</a></div>
+      </div>
+    </aside>
+
+    <!-- RIGHT PANEL -->
+    <main class="content">
+      <header class="topbar">
+        <div class="crumbs">RESUME TRANSCRIPT</div>
+        <div class="toplinks">
+          <a href="resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
+          <span class="dot">•</span>
+          <a href="#contact-anchor">Contact</a>
+        </div>
+      </header>
+
+      <section id="introduction" class="section">
+        <h2>INTRODUCTION</h2>
+        <p>
+          Computer Science student at Ohio Northern University with a cybersecurity concentration (Expected May 2026).
+          Interested in IT/Help Desk, Software Development, and AI-adjacent roles.
         </p>
+        <p>
+          Dean’s List (Fall 2025) with a 3.18 GPA. I enjoy building practical software, troubleshooting systems,
+          and communicating clearly through both documentation and published writing.
+        </p>
+      </section>
 
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-          <a class="btn ghost" href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <section id="education" class="section">
+        <h2>EDUCATION</h2>
 
-        <div class="meta">
-          <div class="meta-card">
-            <div class="meta-title">GPA</div>
-            <div class="meta-value">3.18</div>
-            <div class="meta-sub">Dean’s List (Fall 2025)</div>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">OHIO NORTHERN UNIVERSITY</div>
+            <div class="entry-meta">Ada, OH • Expected May 2026</div>
           </div>
-          <div class="meta-card">
-            <div class="meta-title">Focus</div>
-            <div class="meta-value">IT + SWE</div>
-            <div class="meta-sub">Security-minded, user-first</div>
-          </div>
-          <div class="meta-card">
-            <div class="meta-title">Location</div>
-            <div class="meta-value">Ohio</div>
-            <div class="meta-sub">Open to hybrid/remote</div>
+          <div class="entry-body">
+            <div>B.S. Computer Science</div>
+            <div>Concentration: Cybersecurity</div>
+            <div>GPA: 3.18 • Dean’s List (Fall 2025)</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Selected Projects</h2>
-          <p>Projects I’m comfortable discussing in interviews and sharing publicly.</p>
-        </div>
+      <section id="skills" class="section">
+        <h2>SKILLS</h2>
 
-        <div class="grid">
-          <article class="card">
-            <div class="card-top">
-              <h3>RealSports Picks</h3>
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Docker</span>
-            </div>
-            <p>
-              A sports analytics app that processes datasets and applies ML-style analysis to generate betting insights.
-              Includes a backend API and a simple web interface.
-            </p>
-            <ul class="bullets">
-              <li>Built data processing + analysis pipeline and surfaced results through an API.</li>
-              <li>Containerized the application for repeatable local runs.</li>
-            </ul>
-            <div class="card-actions">
-              <a class="link" href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>QuadTree Imaging</h3>
-              <span class="tag">Java</span>
-              <span class="tag">Data Structures</span>
-            </div>
-            <p>
-              Quadtree-based image processing that generates stylized pixelated/graphic outputs.
-            </p>
-            <ul class="bullets">
-              <li>Implemented recursive subdivision logic using quadtrees.</li>
-              <li>Improved stability through debugging and performance-minded structure.</li>
-            </ul>
-            <div class="card-actions">
-              <a class="link" href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>Oregon Trail (C++)</h3>
-              <span class="tag">C++</span>
-              <span class="tag">OOP</span>
-            </div>
-            <p>
-              A text-based simulation game built around state management and user input handling.
-            </p>
-            <ul class="bullets">
-              <li>Designed game loop + state transitions to prevent edge-case crashes.</li>
-              <li>Built input handling and output formatting for clear gameplay flow.</li>
-            </ul>
-            <div class="card-actions">
-              <a class="link" href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">GitHub →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WRITING -->
-    <section id="writing" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Writing</h2>
-          <p>Published sports analysis and fast-turnaround highlights.</p>
-        </div>
-
-        <div class="card wide">
-          <div class="wide-left">
-            <h3>Empire Sports Media — Contributor</h3>
-            <p>
-              I write published articles and analysis for Empire Sports Media. This work sharpened my ability to
-              communicate clearly, hit deadlines, and explain complex situations quickly.
-            </p>
-            <div class="card-actions">
-              <a class="link" href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">
-                Read my articles →
-              </a>
-            </div>
+        <div class="skillgrid">
+          <div class="skillcol">
+            <div class="skillhead">PROGRAMMING</div>
+            <div class="skillline">Python • Java • C++ • HTML • SAS</div>
           </div>
 
-          <div class="wide-right">
-            <div class="stat">
-              <div class="stat-num">Fast</div>
-              <div class="stat-label">deadlines</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Clear</div>
-              <div class="stat-label">communication</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Reliable</div>
-              <div class="stat-label">output</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-        </div>
-
-        <div class="two-col">
-          <div class="card soft">
-            <h3>What I’m looking for</h3>
-            <p>
-              Entry-level roles where I can troubleshoot systems, build software, and keep improving my security foundation.
-              I like work that blends technical detail with real users.
-            </p>
-            <ul class="bullets">
-              <li>IT / Help Desk / Technical Support</li>
-              <li>Software Development</li>
-              <li>AI-adjacent engineering (data + automation + analysis)</li>
-            </ul>
+          <div class="skillcol">
+            <div class="skillhead">TOOLS</div>
+            <div class="skillline">Git • GitHub • Microsoft Office (Excel, PowerPoint, Word)</div>
           </div>
 
-          <div class="card soft">
-            <h3>Skills snapshot</h3>
-            <ul class="bullets">
-              <li><strong>Languages:</strong> Python, Java, C++, HTML, SAS</li>
-              <li><strong>Tools:</strong> Git/GitHub, FastAPI, Docker (project use)</li>
-              <li><strong>Support:</strong> device setup, POS troubleshooting, explaining tech clearly</li>
-            </ul>
+          <div class="skillcol">
+            <div class="skillhead">IT / SUPPORT</div>
+            <div class="skillline">Troubleshooting • Device Setup • POS Systems • Basic Networking</div>
+          </div>
+
+          <div class="skillcol">
+            <div class="skillhead">MEDIA (ADDITIONAL)</div>
+            <div class="skillline">Adobe Premiere Pro • After Effects</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Best way to reach me is email. Links below too.</p>
-        </div>
+      <section id="leadership" class="section">
+        <h2>LEADERSHIP</h2>
 
-        <div class="contact-card">
-          <a class="btn primary" href="mailto:YOUR_EMAIL_HERE">Email me</a>
-          <div class="contact-links">
-            <a class="link" href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
-            <span class="dot">•</span>
-            <a class="link" href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="dot">•</span>
-            <a class="link" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">Fireside Mets / Empire Sports Media</div>
+            <div class="entry-meta">Social Media Specialist • (Team of 3)</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Led content execution with a small team; grew Fireside Mets to 20K followers in 6 months.</div>
+            <div>— Created graphics and video edits while maintaining consistent publishing schedules.</div>
           </div>
         </div>
 
-        <footer class="footer">
-          <span>© <span id="year"></span> Quinton Fesq</span>
-        </footer>
-      </div>
-    </section>
-  </main>
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">ASSOCIATION FOR COMPUTING MACHINERY (ACM)</div>
+            <div class="entry-meta">Member</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <h2>WORK EXPERIENCE</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">TARGET</div>
+            <div class="entry-meta">Technology Assistant • Jun 2024 – Aug 2024</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Provided customer-facing technical support for device setup, configuration, and troubleshooting.</div>
+            <div>— Resolved hardware/software issues involving POS terminals, scanners, and self-checkout kiosks.</div>
+            <div>— Translated technical information into clear recommendations for non-technical users.</div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">EMPIRE SPORTS MEDIA</div>
+            <div class="entry-meta">Social Media Specialist • Video Editor • Contributor • Apr 2024 – Present</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Edited and delivered content using Premiere Pro and After Effects under tight deadlines.</div>
+            <div>— Authored published sports analysis articles; researched and wrote to meet publication standards.</div>
+            <div>— Managed digital assets and resolved file compatibility issues in production workflows.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>PROJECTS</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">REALSPORTS PICKS</div>
+            <div class="entry-meta">Python • FastAPI • (Optional Docker if you used it)</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Built a sports analytics application that processes datasets and produces betting insights.</div>
+            <div>— Developed an API and a lightweight interface to serve picks and analysis.</div>
+            <div>— GitHub: <a href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">quintonfesq04/RealSports</a></div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">QUADTREE IMAGING</div>
+            <div class="entry-meta">Java • Data Structures</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Implemented a quadtree-based image processing algorithm to generate stylized pixel outputs.</div>
+            <div>— Focused on debugging, stability, and performance for larger images.</div>
+            <div>— GitHub: <a href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">quintonfesq04/QuadTreeImaging</a></div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <div class="entry-title">OREGON TRAIL (C++)</div>
+            <div class="entry-meta">C++ • OOP</div>
+          </div>
+          <div class="entry-body bullets">
+            <div>— Developed a text-based simulation game with input handling and state management.</div>
+            <div>— Improved reliability by handling edge cases to prevent runtime crashes.</div>
+            <div>— GitHub: <a href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">quintonfesq04/OregonTrail</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-anchor" class="section footer">
+        <h2>CONTACT</h2>
+        <p>
+          Best way to reach me: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+        </p>
+        <div class="fineprint">
+          Created by Quinton Fesq. Last updated <span id="updated"></span>.
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
