@@ -1,60 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quinton Fesq</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 { color: #00468c; }
-    a { color: #00468c; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta name="description" content="Quinton Fesq — Computer Science (Cybersecurity). Portfolio, projects, writing, and contact." />
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Quinton Fesq</span>
+      </a>
 
-<h1>Quinton Fesq</h1>
-<p>
-Computer Science student (Cybersecurity concentration) interested in
-IT support, software development, and AI-adjacent roles.
-</p>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="pill">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<h2>Projects</h2>
-<ul>
-  <li>
-    <strong>RealSports Picks</strong> —
-    Python-based analytics app using FastAPI.
-    <a href="https://github.com/quintonfesq04/RealSports">GitHub</a>
-  </li>
-  <li>
-    <strong>QuadTree Imaging</strong> —
-    Java image processing project using quad trees.
-    <a href="https://github.com/quintonfesq04/QuadTreeImaging">GitHub</a>
-  </li>
-</ul>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="kicker">Computer Science • Cybersecurity Concentration</p>
+        <h1>
+          I build reliable software, help people solve technical problems, and write clearly.
+        </h1>
+        <p class="sub">
+          Final-semester CS student at Ohio Northern University. Interested in IT/Help Desk,
+          Software Development, and AI-adjacent roles.
+        </p>
 
-<h2>Writing</h2>
-<p>
-I write published sports analysis for Empire Sports Media.
-<a href="https://empiresportsmedia.com/author/quintonfesq/">Read articles</a>
-</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+          <a class="btn ghost" href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
 
-<h2>Resume</h2>
-<p>
-<a href="resume.pdf">Download my resume</a>
-</p>
+        <div class="meta">
+          <div class="meta-card">
+            <div class="meta-title">GPA</div>
+            <div class="meta-value">3.18</div>
+            <div class="meta-sub">Dean’s List (Fall 2025)</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-title">Focus</div>
+            <div class="meta-value">IT + SWE</div>
+            <div class="meta-sub">Security-minded, user-first</div>
+          </div>
+          <div class="meta-card">
+            <div class="meta-title">Location</div>
+            <div class="meta-value">Ohio</div>
+            <div class="meta-sub">Open to hybrid/remote</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Contact</h2>
-<p>
-<a href="https://github.com/quintonfesq04">GitHub</a> |
-<a href="https://linkedin.com">LinkedIn</a>
-</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <p>Projects I’m comfortable discussing in interviews and sharing publicly.</p>
+        </div>
 
+        <div class="grid">
+          <article class="card">
+            <div class="card-top">
+              <h3>RealSports Picks</h3>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+            </div>
+            <p>
+              A sports analytics app that processes datasets and applies ML-style analysis to generate betting insights.
+              Includes a backend API and a simple web interface.
+            </p>
+            <ul class="bullets">
+              <li>Built data processing + analysis pipeline and surfaced results through an API.</li>
+              <li>Containerized the application for repeatable local runs.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="link" href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>QuadTree Imaging</h3>
+              <span class="tag">Java</span>
+              <span class="tag">Data Structures</span>
+            </div>
+            <p>
+              Quadtree-based image processing that generates stylized pixelated/graphic outputs.
+            </p>
+            <ul class="bullets">
+              <li>Implemented recursive subdivision logic using quadtrees.</li>
+              <li>Improved stability through debugging and performance-minded structure.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="link" href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Oregon Trail (C++)</h3>
+              <span class="tag">C++</span>
+              <span class="tag">OOP</span>
+            </div>
+            <p>
+              A text-based simulation game built around state management and user input handling.
+            </p>
+            <ul class="bullets">
+              <li>Designed game loop + state transitions to prevent edge-case crashes.</li>
+              <li>Built input handling and output formatting for clear gameplay flow.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="link" href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Writing</h2>
+          <p>Published sports analysis and fast-turnaround highlights.</p>
+        </div>
+
+        <div class="card wide">
+          <div class="wide-left">
+            <h3>Empire Sports Media — Contributor</h3>
+            <p>
+              I write published articles and analysis for Empire Sports Media. This work sharpened my ability to
+              communicate clearly, hit deadlines, and explain complex situations quickly.
+            </p>
+            <div class="card-actions">
+              <a class="link" href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">
+                Read my articles →
+              </a>
+            </div>
+          </div>
+
+          <div class="wide-right">
+            <div class="stat">
+              <div class="stat-num">Fast</div>
+              <div class="stat-label">deadlines</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Clear</div>
+              <div class="stat-label">communication</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Reliable</div>
+              <div class="stat-label">output</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+
+        <div class="two-col">
+          <div class="card soft">
+            <h3>What I’m looking for</h3>
+            <p>
+              Entry-level roles where I can troubleshoot systems, build software, and keep improving my security foundation.
+              I like work that blends technical detail with real users.
+            </p>
+            <ul class="bullets">
+              <li>IT / Help Desk / Technical Support</li>
+              <li>Software Development</li>
+              <li>AI-adjacent engineering (data + automation + analysis)</li>
+            </ul>
+          </div>
+
+          <div class="card soft">
+            <h3>Skills snapshot</h3>
+            <ul class="bullets">
+              <li><strong>Languages:</strong> Python, Java, C++, HTML, SAS</li>
+              <li><strong>Tools:</strong> Git/GitHub, FastAPI, Docker (project use)</li>
+              <li><strong>Support:</strong> device setup, POS troubleshooting, explaining tech clearly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Best way to reach me is email. Links below too.</p>
+        </div>
+
+        <div class="contact-card">
+          <a class="btn primary" href="mailto:YOUR_EMAIL_HERE">Email me</a>
+          <div class="contact-links">
+            <a class="link" href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
+            <span class="dot">•</span>
+            <a class="link" href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="dot">•</span>
+            <a class="link" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Quinton Fesq</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
