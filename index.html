@@ -1,297 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Quinton Fesq</title>
-  <meta name="description" content="Quinton Fesq — Computer Science (Cybersecurity). Resume transcript + projects + writing." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Quinton Fesq - IT Professional, Front-End Developer, and Technical Writer.">
+    <title>Quinton Fesq | IT & Development Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>QF</text></svg>">
 </head>
-
 <body>
-  <div class="bg"></div>
 
-  <div class="layout">
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="mark" aria-hidden="true"></div>
-        <div class="brand-text">
-          <div class="name">Quinton Fesq</div>
-          <div class="role">Computer Science • Cybersecurity</div>
-        </div>
-      </div>
+    <div class="layout-container">
+        <header class="sidebar">
+            <div class="profile-header">
+                <h1>Quinton Fesq</h1>
+                <p class="subtitle">IT Support & Developer</p>
+                
+                <div class="cta-group">
+                    <a href="Quinton Fesq.pdf" target="_blank" class="btn btn-primary" aria-label="Download Resume PDF">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Resume PDF
+                    </a>
+                    <a href="https://github.com/[YOUR_USERNAME]" target="_blank" class="btn btn-secondary" aria-label="View GitHub Profile">
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
 
-      <div class="quick">
-        <a class="qbtn" href="resume.pdf" target="_blank" rel="noopener">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l3 3v15H7V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M9 15h6M9 18h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          </span>
-          Resume PDF
-        </a>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#intro" class="nav-link active">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#work" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#writing" class="nav-link">Writing</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-        <a class="qbtn ghost" href="#contact">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          Contact
-        </a>
-      </div>
+            <div class="sidebar-footer">
+                <p id="last-updated"></p>
+            </div>
+        </header>
 
-      <nav class="nav" aria-label="Sections">
-        <a href="#introduction" class="navlink active"><span class="dot"></span>Introduction</a>
-        <a href="#education" class="navlink"><span class="dot"></span>Education</a>
-        <a href="#skills" class="navlink"><span class="dot"></span>Skills</a>
-        <a href="#leadership" class="navlink"><span class="dot"></span>Leadership</a>
-        <a href="#work" class="navlink"><span class="dot"></span>Work</a>
-        <a href="#projects" class="navlink"><span class="dot"></span>Projects</a>
-        <a href="#writing" class="navlink"><span class="dot"></span>Writing</a>
-        <a href="#contact" class="navlink"><span class="dot"></span>Contact</a>
-      </nav>
+        <main class="content">
+            
+            <section id="intro" class="section">
+                <h2 class="sr-only">Introduction</h2>
+                <p class="lead">
+                    I bridge the gap between technical complexity and user experience. 
+                    With a background in <strong>IT Support</strong> and <strong>Front-End Development</strong>, 
+                    I build reliable systems and accessible interfaces.
+                </p>
+                <div class="highlights-bar">
+                    <span class="highlight-pill">Help Desk & IT Operations</span>
+                    <span class="highlight-pill">Web Development</span>
+                    <span class="highlight-pill">Technical Writing</span>
+                </div>
+            </section>
 
-      <div class="mini">
-        <div class="minihead">At a glance</div>
-        <div class="minigrid">
-          <div class="miniitem">
-            <div class="minilabel">GPA</div>
-            <div class="minivalue">3.18</div>
-            <div class="minisub">Dean’s List (Fall 2025)</div>
-          </div>
-          <div class="miniitem">
-            <div class="minilabel">Focus</div>
-            <div class="minivalue">IT + SWE</div>
-            <div class="minisub">Security-minded</div>
-          </div>
-        </div>
-      </div>
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="grid-2-col">
+                    <div class="skill-category">
+                        <h3>Development</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), Git/GitHub, Python, Semantic Markup, Accessibility (WCAG).</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>IT & Operations</h3>
+                        <p>Help Desk Support, Hardware Troubleshooting, Network Basics, Windows/Linux Admin, System Documentation.</p>
+                    </div>
+                </div>
+            </section>
 
-      <div class="links">
-        <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
-        <span>•</span>
-        <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
-        <span>•</span>
-        <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Articles</a>
-      </div>
+            <section id="work" class="section">
+                <h2 class="section-title">Work Experience</h2>
+                
+                <article class="resume-item">
+                    <div class="resume-header">
+                        <h3>[Most Recent Job Title]</h3>
+                        <span class="date">[Date Start] – [Present/End]</span>
+                    </div>
+                    <p class="company">[Company Name] | [City, State]</p>
+                    <ul class="bullet-list">
+                        <li>[Strong action verb] [specific achievement or responsibility from resume].</li>
+                        <li>[Strong action verb] [specific achievement or responsibility from resume].</li>
+                        <li>[Strong action verb] [specific achievement or responsibility from resume].</li>
+                    </ul>
+                </article>
 
-      <div class="footnote">
-        <span id="updated"></span>
-      </div>
-    </aside>
+                <article class="resume-item">
+                    <div class="resume-header">
+                        <h3>[Previous Job Title]</h3>
+                        <span class="date">[Date Start] – [Date End]</span>
+                    </div>
+                    <p class="company">[Company Name] | [City, State]</p>
+                    <ul class="bullet-list">
+                        <li>[Strong action verb] [specific achievement or responsibility from resume].</li>
+                        <li>[Strong action verb] [specific achievement or responsibility from resume].</li>
+                    </ul>
+                </article>
+            </section>
 
-    <!-- CONTENT -->
-    <main class="content">
-      <header class="topbar">
-        <div class="pill">Resume Transcript</div>
-        <div class="topmeta">
-          <span class="muted">City, State</span>
-          <span class="sep">•</span>
-          <a class="toplink" href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
-        </div>
-      </header>
+             <section id="leadership" class="section">
+                <h2 class="section-title">Leadership</h2>
+                <article class="resume-item">
+                    <div class="resume-header">
+                        <h3>[Leadership Role/Title]</h3>
+                        <span class="date">[Dates]</span>
+                    </div>
+                    <p class="company">[Organization]</p>
+                    <ul class="bullet-list">
+                        <li>[Detail about leading a team, organizing an event, or managing a budget].</li>
+                    </ul>
+                </article>
+            </section>
 
-      <section id="introduction" class="section hero">
-        <div class="herohead">
-          <h1>Practical CS student who ships projects, supports users, and communicates clearly.</h1>
-          <p class="lede">
-            I’m a Computer Science student at Ohio Northern University (Cybersecurity concentration, Expected May 2026).
-            I’m applying for <strong>IT/Help Desk</strong>, <strong>Software Development</strong>, and <strong>AI-adjacent</strong> roles.
-          </p>
-          <div class="chips">
-            <span class="chip">Troubleshooting</span>
-            <span class="chip">Python / Java / C++</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">GitHub</span>
-            <span class="chip">Published Writing</span>
-          </div>
-        </div>
-      </section>
+            <section id="projects" class="section">
+                <h2 class="section-title">Technical Projects</h2>
 
-      <section id="education" class="section">
-        <div class="sectiontitle">Education</div>
-        <article class="card">
-          <div class="row">
-            <div class="title">Ohio Northern University</div>
-            <div class="meta">Ada, OH • Expected May 2026</div>
-          </div>
-          <div class="body">
-            <div>B.S. Computer Science</div>
-            <div>Concentration: Cybersecurity</div>
-            <div class="muted">GPA: 3.18 • Dean’s List (Fall 2025)</div>
-          </div>
-        </article>
-      </section>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>RealSports Picks</h3>
+                        <a href="[LINK_IF_AVAILABLE]" class="project-link">View Code &rarr;</a>
+                    </div>
+                    <p class="tech-stack">Python • Data Analysis • API Integration</p>
+                    <p>A data-driven application for sports analytics. Aggregates player statistics to generate predictive models for game outcomes. Implemented efficient data parsing algorithms to handle large datasets.</p>
+                </article>
 
-      <section id="skills" class="section">
-        <div class="sectiontitle">Skills</div>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>QuadTree Imaging</h3>
+                        <a href="[LINK_IF_AVAILABLE]" class="project-link">View Code &rarr;</a>
+                    </div>
+                    <p class="tech-stack">Java/C++ [Confirm Language] • Algorithms • Data Structures</p>
+                    <p>Image compression tool utilizing QuadTree spatial partitioning. Recursively subdivides images into quadrants based on color variance, optimizing storage efficiency while maintaining visual fidelity.</p>
+                </article>
 
-        <div class="grid2">
-          <article class="card">
-            <div class="k">Programming</div>
-            <div class="v">Python • Java • C++ • HTML • SAS</div>
-          </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Oregon Trail Clone</h3>
+                        <a href="[LINK_IF_AVAILABLE]" class="project-link">View Code &rarr;</a>
+                    </div>
+                    <p class="tech-stack">JavaScript • OOP • Game Logic</p>
+                    <p>A browser-based recreation of the classic survival game. Features custom event handling, resource management logic, and a retro-styled UI built without canvas libraries.</p>
+                </article>
+            </section>
 
-          <article class="card">
-            <div class="k">Tools</div>
-            <div class="v">Git • GitHub • Excel • PowerPoint • Word</div>
-          </article>
+            <section id="writing" class="section">
+                <h2 class="section-title">Writing & Publications</h2>
+                <article class="resume-item">
+                    <div class="resume-header">
+                        <h3>Empire Sports Media</h3>
+                        <a href="[YOUR_AUTHOR_PAGE_URL]" target="_blank" class="external-link">Read Articles &nearr;</a>
+                    </div>
+                    <p>Contributing Author</p>
+                    <p>Write analytical articles focused on [Specific Sport/Team]. Translate complex game stats into engaging narratives for a general audience.</p>
+                </article>
+            </section>
 
-          <article class="card">
-            <div class="k">IT / Support</div>
-            <div class="v">Troubleshooting • Device Setup • POS Systems • Basic Networking</div>
-          </article>
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="resume-item">
+                    <div class="resume-header">
+                        <h3>[Degree Name, e.g., B.S. Computer Science]</h3>
+                        <span class="date">[Graduation Year]</span>
+                    </div>
+                    <p>[University Name] | [Location]</p>
+                    <p class="sub-text">Relevant Coursework: [Course 1], [Course 2], [Course 3]</p>
+                </div>
+            </section>
 
-          <article class="card">
-            <div class="k">Media (additional)</div>
-            <div class="v">Premiere Pro • After Effects</div>
-          </article>
-        </div>
-      </section>
+            <section id="contact" class="section footer-section">
+                <h2 class="section-title">Get in Touch</h2>
+                <p>I am currently open to opportunities in IT Support, Software Development, and Technical Operations.</p>
+                <div class="contact-links">
+                    <a href="mailto:[YOUR_EMAIL_ADDRESS]" class="btn btn-primary">Email Me</a>
+                    <a href="https://www.linkedin.com/in/[YOUR_LINKEDIN]" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </section>
 
-      <section id="leadership" class="section">
-        <div class="sectiontitle">Leadership</div>
+        </main>
+    </div>
 
-        <article class="card">
-          <div class="row">
-            <div class="title">Fireside Mets / Empire Sports Media</div>
-            <div class="meta">Social Media Specialist • Team of 3</div>
-          </div>
-          <ul class="bullets">
-            <li>Led content execution with a small team; grew Fireside Mets to <strong>20K followers in 6 months</strong>.</li>
-            <li>Maintained consistent publishing schedules while producing graphics and video edits.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">Association for Computing Machinery (ACM)</div>
-            <div class="meta">Member</div>
-          </div>
-        </article>
-      </section>
-
-      <section id="work" class="section">
-        <div class="sectiontitle">Work Experience</div>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">Target</div>
-            <div class="meta">Technology Assistant • Jun 2024 – Aug 2024</div>
-          </div>
-          <ul class="bullets">
-            <li>Provided customer-facing technical support for device setup, configuration, and troubleshooting.</li>
-            <li>Resolved hardware/software issues involving POS terminals, scanners, and self-checkout kiosks.</li>
-            <li>Explained technical options clearly to non-technical users under time pressure.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">Empire Sports Media</div>
-            <div class="meta">Social Media Specialist • Video Editor • Contributor • Apr 2024 – Present</div>
-          </div>
-          <ul class="bullets">
-            <li>Edited and delivered content using Premiere Pro and After Effects under tight deadlines.</li>
-            <li>Authored published sports analysis articles; researched and wrote to meet publication standards.</li>
-            <li>Managed digital assets and resolved file compatibility issues in production workflows.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="sectiontitle">Projects</div>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">RealSports Picks</div>
-            <div class="meta">Python • FastAPI</div>
-          </div>
-          <ul class="bullets">
-            <li>Built a sports analytics application that processes datasets and produces betting insights.</li>
-            <li>Developed an API and a lightweight interface to serve picks and analysis.</li>
-          </ul>
-          <div class="actions">
-            <a class="alink" href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">QuadTree Imaging</div>
-            <div class="meta">Java • Data Structures</div>
-          </div>
-          <ul class="bullets">
-            <li>Implemented a quadtree-based image processing algorithm to generate stylized pixel outputs.</li>
-            <li>Focused on debugging, stability, and performance for larger images.</li>
-          </ul>
-          <div class="actions">
-            <a class="alink" href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="row">
-            <div class="title">Oregon Trail (C++)</div>
-            <div class="meta">C++ • OOP</div>
-          </div>
-          <ul class="bullets">
-            <li>Developed a text-based simulation game with input handling and state management.</li>
-            <li>Improved reliability by handling edge cases to prevent runtime crashes.</li>
-          </ul>
-          <div class="actions">
-            <a class="alink" href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">GitHub →</a>
-          </div>
-        </article>
-
-        <div class="note">
-          <strong>Note:</strong> I only list projects I’m comfortable sharing publicly and discussing in interviews.
-        </div>
-      </section>
-
-      <section id="writing" class="section">
-        <div class="sectiontitle">Writing</div>
-        <article class="card">
-          <div class="row">
-            <div class="title">Empire Sports Media — Articles</div>
-            <div class="meta">Published</div>
-          </div>
-          <p class="p">
-            I write published sports analysis for Empire Sports Media. This work sharpened my ability to research,
-            explain complex situations clearly, and deliver under deadlines.
-          </p>
-          <div class="actions">
-            <a class="alink" href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Read articles →</a>
-          </div>
-        </article>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="sectiontitle">Contact</div>
-        <article class="card contactcard">
-          <div>
-            <div class="title">Best way to reach me</div>
-            <div class="muted">Email is fastest. Links below too.</div>
-          </div>
-
-          <div class="contactrow">
-            <a class="bigbtn" href="mailto:YOUR_EMAIL_HERE">Email me</a>
-            <a class="ghostbtn" href="resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
-          </div>
-
-          <div class="linkrow">
-            <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
-            <span>•</span>
-            <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
-            <span>•</span>
-            <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Articles</a>
-          </div>
-        </article>
-
-        <div class="footer">© <span id="year"></span> Quinton Fesq</div>
-      </section>
-
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
