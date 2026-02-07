@@ -1,17 +1,19 @@
-// update active nav link on scroll + last updated
-const links = Array.from(document.querySelectorAll(".nav a"));
-const sections = links.map(a => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+// active nav highlight + timestamps
+const navLinks = Array.from(document.querySelectorAll(".navlink"));
+const sections = navLinks
+  .map(a => document.querySelector(a.getAttribute("href")))
+  .filter(Boolean);
 
-const setActive = () => {
+function setActive() {
   let current = sections[0];
   for (const s of sections) {
     const rect = s.getBoundingClientRect();
-    if (rect.top <= 120) current = s;
+    if (rect.top <= 140) current = s;
   }
-  links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${current.id}`));
-};
-
+  navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${current.id}`));
+}
 document.addEventListener("scroll", setActive, { passive: true });
 setActive();
 
-document.getElementById("updated").textContent = new Date().toLocaleString();
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("updated").textContent = `Last updated ${new Date().toLocaleDateString()}`;
