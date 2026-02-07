@@ -4,201 +4,291 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quinton Fesq</title>
-  <meta name="description" content="Quinton Fesq — Resume transcript portfolio." />
+  <meta name="description" content="Quinton Fesq — Computer Science (Cybersecurity). Resume transcript + projects + writing." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <div class="bg"></div>
+
   <div class="layout">
-    <!-- LEFT PANEL -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
-      <div class="nameblock">
-        <div class="name">QUINTON<br/>FESQ</div>
-        <div class="subtitle">Computer Science • Cybersecurity</div>
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="name">Quinton Fesq</div>
+          <div class="role">Computer Science • Cybersecurity</div>
+        </div>
       </div>
 
-      <nav class="nav">
-        <a href="#introduction" class="active">INTRODUCTION</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#leadership">LEADERSHIP</a>
-        <a href="#work">WORK</a>
-        <a href="#projects">PROJ</a>
+      <div class="quick">
+        <a class="qbtn" href="resume.pdf" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l3 3v15H7V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M14 3v4h4" stroke="currentColor" stroke-width="1.8"/><path d="M9 12h6M9 15h6M9 18h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          Resume PDF
+        </a>
+
+        <a class="qbtn ghost" href="#contact">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          Contact
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="#introduction" class="navlink active"><span class="dot"></span>Introduction</a>
+        <a href="#education" class="navlink"><span class="dot"></span>Education</a>
+        <a href="#skills" class="navlink"><span class="dot"></span>Skills</a>
+        <a href="#leadership" class="navlink"><span class="dot"></span>Leadership</a>
+        <a href="#work" class="navlink"><span class="dot"></span>Work</a>
+        <a href="#projects" class="navlink"><span class="dot"></span>Projects</a>
+        <a href="#writing" class="navlink"><span class="dot"></span>Writing</a>
+        <a href="#contact" class="navlink"><span class="dot"></span>Contact</a>
       </nav>
 
-      <div class="contact">
-        <div class="contact-title">CONTACT</div>
-        <div class="contact-item"><span class="label">Email:</span> <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></div>
-        <div class="contact-item"><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">/in/quinton-fesq-984011207</a></div>
-        <div class="contact-item"><span class="label">GitHub:</span> <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">github.com/quintonfesq04</a></div>
-        <div class="contact-item"><span class="label">Articles:</span> <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Empire Sports Media</a></div>
+      <div class="mini">
+        <div class="minihead">At a glance</div>
+        <div class="minigrid">
+          <div class="miniitem">
+            <div class="minilabel">GPA</div>
+            <div class="minivalue">3.18</div>
+            <div class="minisub">Dean’s List (Fall 2025)</div>
+          </div>
+          <div class="miniitem">
+            <div class="minilabel">Focus</div>
+            <div class="minivalue">IT + SWE</div>
+            <div class="minisub">Security-minded</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
+        <span>•</span>
+        <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Articles</a>
+      </div>
+
+      <div class="footnote">
+        <span id="updated"></span>
       </div>
     </aside>
 
-    <!-- RIGHT PANEL -->
+    <!-- CONTENT -->
     <main class="content">
       <header class="topbar">
-        <div class="crumbs">RESUME TRANSCRIPT</div>
-        <div class="toplinks">
-          <a href="resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
-          <span class="dot">•</span>
-          <a href="#contact-anchor">Contact</a>
+        <div class="pill">Resume Transcript</div>
+        <div class="topmeta">
+          <span class="muted">City, State</span>
+          <span class="sep">•</span>
+          <a class="toplink" href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
         </div>
       </header>
 
-      <section id="introduction" class="section">
-        <h2>INTRODUCTION</h2>
-        <p>
-          Computer Science student at Ohio Northern University with a cybersecurity concentration (Expected May 2026).
-          Interested in IT/Help Desk, Software Development, and AI-adjacent roles.
-        </p>
-        <p>
-          Dean’s List (Fall 2025) with a 3.18 GPA. I enjoy building practical software, troubleshooting systems,
-          and communicating clearly through both documentation and published writing.
-        </p>
-      </section>
-
-      <section id="education" class="section">
-        <h2>EDUCATION</h2>
-
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">OHIO NORTHERN UNIVERSITY</div>
-            <div class="entry-meta">Ada, OH • Expected May 2026</div>
-          </div>
-          <div class="entry-body">
-            <div>B.S. Computer Science</div>
-            <div>Concentration: Cybersecurity</div>
-            <div>GPA: 3.18 • Dean’s List (Fall 2025)</div>
+      <section id="introduction" class="section hero">
+        <div class="herohead">
+          <h1>Practical CS student who ships projects, supports users, and communicates clearly.</h1>
+          <p class="lede">
+            I’m a Computer Science student at Ohio Northern University (Cybersecurity concentration, Expected May 2026).
+            I’m applying for <strong>IT/Help Desk</strong>, <strong>Software Development</strong>, and <strong>AI-adjacent</strong> roles.
+          </p>
+          <div class="chips">
+            <span class="chip">Troubleshooting</span>
+            <span class="chip">Python / Java / C++</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Published Writing</span>
           </div>
         </div>
       </section>
 
+      <section id="education" class="section">
+        <div class="sectiontitle">Education</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Ohio Northern University</div>
+            <div class="meta">Ada, OH • Expected May 2026</div>
+          </div>
+          <div class="body">
+            <div>B.S. Computer Science</div>
+            <div>Concentration: Cybersecurity</div>
+            <div class="muted">GPA: 3.18 • Dean’s List (Fall 2025)</div>
+          </div>
+        </article>
+      </section>
+
       <section id="skills" class="section">
-        <h2>SKILLS</h2>
+        <div class="sectiontitle">Skills</div>
 
-        <div class="skillgrid">
-          <div class="skillcol">
-            <div class="skillhead">PROGRAMMING</div>
-            <div class="skillline">Python • Java • C++ • HTML • SAS</div>
-          </div>
+        <div class="grid2">
+          <article class="card">
+            <div class="k">Programming</div>
+            <div class="v">Python • Java • C++ • HTML • SAS</div>
+          </article>
 
-          <div class="skillcol">
-            <div class="skillhead">TOOLS</div>
-            <div class="skillline">Git • GitHub • Microsoft Office (Excel, PowerPoint, Word)</div>
-          </div>
+          <article class="card">
+            <div class="k">Tools</div>
+            <div class="v">Git • GitHub • Excel • PowerPoint • Word</div>
+          </article>
 
-          <div class="skillcol">
-            <div class="skillhead">IT / SUPPORT</div>
-            <div class="skillline">Troubleshooting • Device Setup • POS Systems • Basic Networking</div>
-          </div>
+          <article class="card">
+            <div class="k">IT / Support</div>
+            <div class="v">Troubleshooting • Device Setup • POS Systems • Basic Networking</div>
+          </article>
 
-          <div class="skillcol">
-            <div class="skillhead">MEDIA (ADDITIONAL)</div>
-            <div class="skillline">Adobe Premiere Pro • After Effects</div>
-          </div>
+          <article class="card">
+            <div class="k">Media (additional)</div>
+            <div class="v">Premiere Pro • After Effects</div>
+          </article>
         </div>
       </section>
 
       <section id="leadership" class="section">
-        <h2>LEADERSHIP</h2>
+        <div class="sectiontitle">Leadership</div>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">Fireside Mets / Empire Sports Media</div>
-            <div class="entry-meta">Social Media Specialist • (Team of 3)</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Fireside Mets / Empire Sports Media</div>
+            <div class="meta">Social Media Specialist • Team of 3</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Led content execution with a small team; grew Fireside Mets to 20K followers in 6 months.</div>
-            <div>— Created graphics and video edits while maintaining consistent publishing schedules.</div>
-          </div>
-        </div>
+          <ul class="bullets">
+            <li>Led content execution with a small team; grew Fireside Mets to <strong>20K followers in 6 months</strong>.</li>
+            <li>Maintained consistent publishing schedules while producing graphics and video edits.</li>
+          </ul>
+        </article>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">ASSOCIATION FOR COMPUTING MACHINERY (ACM)</div>
-            <div class="entry-meta">Member</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Association for Computing Machinery (ACM)</div>
+            <div class="meta">Member</div>
           </div>
-        </div>
+        </article>
       </section>
 
       <section id="work" class="section">
-        <h2>WORK EXPERIENCE</h2>
+        <div class="sectiontitle">Work Experience</div>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">TARGET</div>
-            <div class="entry-meta">Technology Assistant • Jun 2024 – Aug 2024</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Target</div>
+            <div class="meta">Technology Assistant • Jun 2024 – Aug 2024</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Provided customer-facing technical support for device setup, configuration, and troubleshooting.</div>
-            <div>— Resolved hardware/software issues involving POS terminals, scanners, and self-checkout kiosks.</div>
-            <div>— Translated technical information into clear recommendations for non-technical users.</div>
-          </div>
-        </div>
+          <ul class="bullets">
+            <li>Provided customer-facing technical support for device setup, configuration, and troubleshooting.</li>
+            <li>Resolved hardware/software issues involving POS terminals, scanners, and self-checkout kiosks.</li>
+            <li>Explained technical options clearly to non-technical users under time pressure.</li>
+          </ul>
+        </article>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">EMPIRE SPORTS MEDIA</div>
-            <div class="entry-meta">Social Media Specialist • Video Editor • Contributor • Apr 2024 – Present</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Empire Sports Media</div>
+            <div class="meta">Social Media Specialist • Video Editor • Contributor • Apr 2024 – Present</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Edited and delivered content using Premiere Pro and After Effects under tight deadlines.</div>
-            <div>— Authored published sports analysis articles; researched and wrote to meet publication standards.</div>
-            <div>— Managed digital assets and resolved file compatibility issues in production workflows.</div>
-          </div>
-        </div>
+          <ul class="bullets">
+            <li>Edited and delivered content using Premiere Pro and After Effects under tight deadlines.</li>
+            <li>Authored published sports analysis articles; researched and wrote to meet publication standards.</li>
+            <li>Managed digital assets and resolved file compatibility issues in production workflows.</li>
+          </ul>
+        </article>
       </section>
 
       <section id="projects" class="section">
-        <h2>PROJECTS</h2>
+        <div class="sectiontitle">Projects</div>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">REALSPORTS PICKS</div>
-            <div class="entry-meta">Python • FastAPI • (Optional Docker if you used it)</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">RealSports Picks</div>
+            <div class="meta">Python • FastAPI</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Built a sports analytics application that processes datasets and produces betting insights.</div>
-            <div>— Developed an API and a lightweight interface to serve picks and analysis.</div>
-            <div>— GitHub: <a href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">quintonfesq04/RealSports</a></div>
+          <ul class="bullets">
+            <li>Built a sports analytics application that processes datasets and produces betting insights.</li>
+            <li>Developed an API and a lightweight interface to serve picks and analysis.</li>
+          </ul>
+          <div class="actions">
+            <a class="alink" href="https://github.com/quintonfesq04/RealSports" target="_blank" rel="noopener">GitHub →</a>
           </div>
-        </div>
+        </article>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">QUADTREE IMAGING</div>
-            <div class="entry-meta">Java • Data Structures</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">QuadTree Imaging</div>
+            <div class="meta">Java • Data Structures</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Implemented a quadtree-based image processing algorithm to generate stylized pixel outputs.</div>
-            <div>— Focused on debugging, stability, and performance for larger images.</div>
-            <div>— GitHub: <a href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">quintonfesq04/QuadTreeImaging</a></div>
+          <ul class="bullets">
+            <li>Implemented a quadtree-based image processing algorithm to generate stylized pixel outputs.</li>
+            <li>Focused on debugging, stability, and performance for larger images.</li>
+          </ul>
+          <div class="actions">
+            <a class="alink" href="https://github.com/quintonfesq04/QuadTreeImaging" target="_blank" rel="noopener">GitHub →</a>
           </div>
-        </div>
+        </article>
 
-        <div class="entry">
-          <div class="entry-head">
-            <div class="entry-title">OREGON TRAIL (C++)</div>
-            <div class="entry-meta">C++ • OOP</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Oregon Trail (C++)</div>
+            <div class="meta">C++ • OOP</div>
           </div>
-          <div class="entry-body bullets">
-            <div>— Developed a text-based simulation game with input handling and state management.</div>
-            <div>— Improved reliability by handling edge cases to prevent runtime crashes.</div>
-            <div>— GitHub: <a href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">quintonfesq04/OregonTrail</a></div>
+          <ul class="bullets">
+            <li>Developed a text-based simulation game with input handling and state management.</li>
+            <li>Improved reliability by handling edge cases to prevent runtime crashes.</li>
+          </ul>
+          <div class="actions">
+            <a class="alink" href="https://github.com/quintonfesq04/OregonTrail" target="_blank" rel="noopener">GitHub →</a>
           </div>
+        </article>
+
+        <div class="note">
+          <strong>Note:</strong> I only list projects I’m comfortable sharing publicly and discussing in interviews.
         </div>
       </section>
 
-      <section id="contact-anchor" class="section footer">
-        <h2>CONTACT</h2>
-        <p>
-          Best way to reach me: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
-        </p>
-        <div class="fineprint">
-          Created by Quinton Fesq. Last updated <span id="updated"></span>.
-        </div>
+      <section id="writing" class="section">
+        <div class="sectiontitle">Writing</div>
+        <article class="card">
+          <div class="row">
+            <div class="title">Empire Sports Media — Articles</div>
+            <div class="meta">Published</div>
+          </div>
+          <p class="p">
+            I write published sports analysis for Empire Sports Media. This work sharpened my ability to research,
+            explain complex situations clearly, and deliver under deadlines.
+          </p>
+          <div class="actions">
+            <a class="alink" href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Read articles →</a>
+          </div>
+        </article>
       </section>
+
+      <section id="contact" class="section">
+        <div class="sectiontitle">Contact</div>
+        <article class="card contactcard">
+          <div>
+            <div class="title">Best way to reach me</div>
+            <div class="muted">Email is fastest. Links below too.</div>
+          </div>
+
+          <div class="contactrow">
+            <a class="bigbtn" href="mailto:YOUR_EMAIL_HERE">Email me</a>
+            <a class="ghostbtn" href="resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
+          </div>
+
+          <div class="linkrow">
+            <a href="https://github.com/quintonfesq04" target="_blank" rel="noopener">GitHub</a>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/quinton-fesq-984011207/" target="_blank" rel="noopener">LinkedIn</a>
+            <span>•</span>
+            <a href="https://empiresportsmedia.com/author/quintonfesq/" target="_blank" rel="noopener">Articles</a>
+          </div>
+        </article>
+
+        <div class="footer">© <span id="year"></span> Quinton Fesq</div>
+      </section>
+
     </main>
   </div>
 
